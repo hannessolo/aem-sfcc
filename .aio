@@ -1,0 +1,181 @@
+{
+  "project": {
+    "id": "4566206088345273314",
+    "name": "128ThistleEarthworm",
+    "title": "hhertachAemSfcc",
+    "org": {
+      "id": "53444",
+      "name": "Adobe IO",
+      "ims_org_id": "BA3E5257595416580A495C6D@AdobeOrg",
+      "details": {
+        "services": [
+          {
+            "name": "API Mesh for Adobe Developer App Builder",
+            "code": "GraphQLServiceSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Adobe Express Embed SDK",
+            "code": "CCEmbedCompanionAPI",
+            "type": "adobeid"
+          },
+          {
+            "name": "Adobe Stock",
+            "code": "StockSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Creative Cloud Libraries",
+            "code": "CC-Libraries-SDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "PDF Embed API",
+            "code": "ViewSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Adobe Commerce with Adobe ID",
+            "code": "AdobeCommerceWithAdobeID",
+            "type": "adobeid"
+          },
+          {
+            "name": "Lightroom Services",
+            "code": "LightroomPartnersSDK",
+            "type": "adobeid"
+          },
+          {
+            "name": "Adobe Analytics",
+            "code": "AdobeAnalyticsSDK",
+            "type": "analytics"
+          },
+          {
+            "name": "Audience Manager API",
+            "code": "AudienceManagerCustomerSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Asset Compute",
+            "code": "AssetComputeSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Cloud Manager",
+            "code": "CloudManagerSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Campaign",
+            "code": "CampaignSDK",
+            "type": "entp"
+          },
+          {
+            "name": "I/O Management API",
+            "code": "AdobeIOManagementAPISDK",
+            "type": "entp"
+          },
+          {
+            "name": "Experience Platform API",
+            "code": "McDataServicesSdk",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Photoshop API",
+            "code": "CIS SDK",
+            "type": "entp"
+          },
+          {
+            "name": "Smart Content",
+            "code": "MCSmartContentServicesSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Status API",
+            "code": "StatusAPISDK",
+            "type": "entp"
+          },
+          {
+            "name": "Customer Journey Analytics",
+            "code": "CJA SDK",
+            "type": "entp"
+          },
+          {
+            "name": "Primetime Ad Insertion",
+            "code": "Ad Config Service",
+            "type": "entp"
+          },
+          {
+            "name": "Privacy Service API",
+            "code": "McGdprSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Places",
+            "code": "McPlacesSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Globalization Content Service",
+            "code": "gcs-partner",
+            "type": "entp"
+          },
+          {
+            "name": "Experience Cloud Setup Automation",
+            "code": "DxSetupAutomationSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Assurance API",
+            "code": "Griffon - Graffias",
+            "type": "entp"
+          },
+          {
+            "name": "User Management API",
+            "code": "UserMgmtSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Experience Platform Launch API",
+            "code": "McDtmSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe I/O Events for Adobe Commerce",
+            "code": "commerceeventing",
+            "type": "entp"
+          },
+          {
+            "name": "I/O Events",
+            "code": "CloudIntegrationSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Analytics",
+            "code": "AdobeAnalyticsSDK",
+            "type": "entp"
+          },
+          {
+            "name": "AEM Brand Portal",
+            "code": "AEMBrandPortalSDK",
+            "type": "entp"
+          }
+        ]
+      }
+    },
+    "workspace": {
+      "id": "4566206088345290153",
+      "name": "Stage",
+      "title": "Stage",
+      "action_url": "https://53444-128thistleearthworm-stage.adobeioruntime.net",
+      "app_url": "https://53444-128thistleearthworm-stage.adobeio-static.net",
+      "details": {
+        "credentials": [],
+        "services": [],
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}

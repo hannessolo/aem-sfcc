@@ -5,3 +5,6 @@ LICENSE
 package.json
 package-lock.json
 test/*
+actions/*
+app.config.yaml
+.aio

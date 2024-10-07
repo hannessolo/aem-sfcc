@@ -1,0 +1,17 @@
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      aem-sfcc:
+        license: Apache-2.0
+        actions:
+          example:
+            function: actions/example/index.js
+            web: 'yes'
+            runtime: nodejs:14
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: false
+              final: true
