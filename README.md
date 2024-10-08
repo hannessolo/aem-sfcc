@@ -1,9 +1,10 @@
-# Your Project's Title...
-Your project's description...
+# AEM SFCC Integration
+
+WIP
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--aem-sfcc--hannessolo.aem.page/
+- Live: https://main--aem-sfcc--hannessolo.aem.live/
 
 ## Installation
 

@@ -3,17 +3,30 @@
 */
 
 /* eslint-disable import/extensions */
+/* eslint-disable no-underscore-dangle */
 
-const fetch = require('node-fetch');
 const { Core } = require('@adobe/aio-sdk');
 const {
   errorResponse, stringParameters, checkMissingRequestInputs,
 } = require('../utils');
+const { getHtml } = require('./html-template');
 
 // main function that will be executed by Adobe I/O Runtime
 async function main(params) {
   // create a Logger
   const logger = Core.Logger('main', { level: params.LOG_LEVEL || 'info' });
+
+  const path = params.__ow_path;
+
+  const paths = [
+    'products/hats',
+  ];
+
+  if (!paths.includes(path) && !paths.map((p) => `/${p}`).includes(path)) {
+    return {
+      statusCode: 404,
+    };
+  }
 
   try {
     // 'info' is the default level if not set
@@ -31,23 +44,13 @@ async function main(params) {
       return errorResponse(400, errorMessage, logger);
     }
 
-    // replace this with the api you want to access
-    const apiEndpoint = 'https://adobeioruntime.net/api/v1';
-
-    // fetch content from external api endpoint
-    const res = await fetch(apiEndpoint);
-    if (!res.ok) {
-      throw new Error(`request to ${apiEndpoint} failed with status code ${res.status}`);
-    }
-    const content = await res.json();
-    const response = {
+    return {
       statusCode: 200,
-      body: { ...content, foo: 'bar' },
+      headers: {
+        'content-type': 'text/html',
+      },
+      body: getHtml(),
     };
-
-    // log the response status code
-    logger.info(`${response.statusCode}: successful request`);
-    return response;
   } catch (error) {
     // log any server errors
     logger.error(error);

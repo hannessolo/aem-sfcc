@@ -6,8 +6,8 @@ application:
       aem-sfcc:
         license: Apache-2.0
         actions:
-          example:
-            function: actions/example/index.js
+          render-page:
+            function: actions/render-page/index.js
             web: 'yes'
             runtime: nodejs:14
             inputs:
