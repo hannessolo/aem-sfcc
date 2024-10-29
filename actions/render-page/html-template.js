@@ -1,4 +1,4 @@
-function getHtml() {
+function getHtml({ category, sku }) {
   return `
     <!DOCTYPE html>
     <html>
@@ -25,8 +25,8 @@ function getHtml() {
         <header></header>
         <main>
           <div>
-            <h1>Test</h1>
-            <p>Test</p>
+            <h1>Product ${sku}</h1>
+            <p>This product is in category ${category}</p>
           </div>
         </main>
         <footer></footer>

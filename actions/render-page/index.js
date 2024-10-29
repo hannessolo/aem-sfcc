@@ -18,15 +18,9 @@ async function main(params) {
 
   const path = params.__ow_path;
 
-  const paths = [
-    'products/hats',
-  ];
-
-  if (!paths.includes(path) && !paths.map((p) => `/${p}`).includes(path)) {
-    return {
-      statusCode: 404,
-    };
-  }
+  const pathArray = path.split('/');
+  const category = pathArray[1];
+  const sku = pathArray[2];
 
   try {
     // 'info' is the default level if not set
@@ -49,7 +43,7 @@ async function main(params) {
       headers: {
         'content-type': 'text/html',
       },
-      body: getHtml(),
+      body: getHtml({ category, sku }),
     };
   } catch (error) {
     // log any server errors

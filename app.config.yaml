@@ -15,3 +15,14 @@ application:
             annotations:
               require-adobe-auth: false
               final: true
+          run-diff:
+            function: actions/run-diff/index.js
+            web: 'yes'
+            runtime: nodejs:14
+            inputs:
+              LOG_LEVEL: debug
+              USERNAME: $USERNAME
+              PASSWORD: $PASSWORD
+            annotations:
+              require-adobe-auth: false
+              final: true
